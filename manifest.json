@@ -2,6 +2,7 @@
   "manifest_version": 3,
   "name": "cympfh-fox",
   "version": "0.1.0",
+  "description": "Personal Firefox extension for cympfh",
   "permissions": ["clipboardWrite"],
   "host_permissions": [
     "https://www.nicovideo.jp/*",
