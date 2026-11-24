@@ -3,17 +3,33 @@
   "name": "cympfh-fox",
   "version": "0.1.0",
   "description": "Personal Firefox extension for cympfh",
-  "permissions": ["clipboardWrite"],
+  "permissions": [
+    "clipboardWrite"
+  ],
   "host_permissions": [
     "https://www.nicovideo.jp/*",
     "https://www.bilibili.com/*"
   ],
-  "content_scripts": [{
-    "matches": [
-      "https://www.nicovideo.jp/watch/*",
-      "https://www.bilibili.com/video/*"
-    ],
-    "js": ["content.js"],
-    "run_at": "document_idle"
-  }]
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.nicovideo.jp/watch/*",
+        "https://www.bilibili.com/video/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "cympfh-fox@cympfh.cc",
+      "data_collection_permissions": {
+        "required": [
+          "none"
+        ]
+      }
+    }
+  }
 }
