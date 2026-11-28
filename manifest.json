@@ -8,13 +8,17 @@
   ],
   "host_permissions": [
     "https://www.nicovideo.jp/*",
-    "https://www.bilibili.com/*"
+    "https://www.bilibili.com/*",
+    "https://www.youtube.com/*",
+    "https://m.youtube.com/*"
   ],
   "content_scripts": [
     {
       "matches": [
         "https://www.nicovideo.jp/watch/*",
-        "https://www.bilibili.com/video/*"
+        "https://www.bilibili.com/video/*",
+        "https://www.youtube.com/*",
+        "https://m.youtube.com/*"
       ],
       "js": [
         "content.js"
